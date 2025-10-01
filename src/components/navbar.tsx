@@ -5,7 +5,7 @@ import {
     NavbarContent,
     NavbarItem,
 } from "@heroui/navbar";
-import { siteConfig } from "@/config/site";
+
 import {
     GithubIcon,
 } from "@/components/icons";
@@ -16,7 +16,7 @@ export const Navbar = () => {
             {/* Left-aligned GitHub icon */}
             <NavbarContent className="basis-1/5" justify="start">
                 <NavbarItem>
-                    <Link isExternal href={siteConfig.links.github} title="GitHub">
+                    <Link isExternal  title="GitHub">
                         <GithubIcon className="text-default-500" />
                     </Link>
                 </NavbarItem>
