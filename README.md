@@ -1,25 +1,22 @@
-# Vite & HeroUI Template
+# Crypto Calculator
 
-This is a template for creating applications using Vite and HeroUI (v2).
+A modern cryptocurrency calculator built with Vite and HeroUI. Calculate crypto conversions, track prices, and perform various cryptocurrency-related calculations with a beautiful, responsive interface.
 
-[Try it on CodeSandbox](https://githubbox.com/heroui-inc/vite-template)
+## Features
 
-## Technologies Used
+- Real-time cryptocurrency price calculations
+- Multi-currency conversion support
+- Clean and intuitive user interface
+- Responsive design for all devices
+- Fast performance with Vite
 
-- [Vite](https://vitejs.dev/guide/)
-- [HeroUI](https://heroui.com)
-- [Tailwind CSS](https://tailwindcss.com)
-- [Tailwind Variants](https://tailwind-variants.org)
-- [TypeScript](https://www.typescriptlang.org)
-- [Framer Motion](https://www.framer.com/motion)
 
-## How to Use
+## Getting Started
 
-To clone the project, run the following command:
+### Prerequisites
 
-```bash
-git clone https://github.com/heroui-inc/vite-template.git
-```
+Make sure you have Node.js installed on your machine.
+
 
 ### Install dependencies
 
@@ -35,16 +32,12 @@ npm install
 npm run dev
 ```
 
-### Setup pnpm (optional)
-
-If you are using `pnpm`, you need to add the following code to your `.npmrc` file:
+### Build for production
 
 ```bash
-public-hoist-pattern[]=*@heroui/*
+npm run build
 ```
-
-After modifying the `.npmrc` file, you need to run `pnpm install` again to ensure that the dependencies are installed correctly.
 
 ## License
 
-Licensed under the [MIT license](https://github.com/heroui-inc/vite-template/blob/main/LICENSE).
+Licensed under the [MIT license](LICENSE).
