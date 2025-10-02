@@ -1,4 +1,3 @@
-import DefaultLayout from "@/layouts/default";
 import CombinedChart from "@/components/CombinedChart";
 import { Navbar } from "@/components/navbar";
 import React, { useState } from "react";
