@@ -10,10 +10,11 @@ export default function TimeRange({ label, onSelect, initialDates }) {
         <DateRangePicker
             showMonthAndYearPickers
             aria-label='Time'
-            label="Time Range"
             variant="bordered"
             defaultValue={initialDates}
             onChange={handleStartChange}
+            style={{ color: 'white', fontWeight: 'bold' }}
+
         />
     );
 }

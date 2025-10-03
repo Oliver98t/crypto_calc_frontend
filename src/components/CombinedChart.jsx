@@ -137,6 +137,7 @@ export default function CombinedChart() {
 
     return (
         <section className="flex flex-col items-center justify-center gap-4 w-full h-full">
+            
             <div className="flex flex-row items-center justify-center border-2 border-gray-700 rounded-xl w-full max-w-5xl gap-4 p-4" style={{ height: "500px" }}>
                 <div className="flex flex-row items-center justify-center border-2 border-gray-700 rounded-xl w-full h-full max-w-5xl gap-4 p-4">
                     <NumberChart
@@ -147,8 +148,9 @@ export default function CombinedChart() {
                     />
                 </div>
                 {/* Gauge takes up 1/5 of the parent */}
-                <div className="flex items-center justify-center basis-1/5 h-full border-2 border-gray-700 rounded-xl">
+                <div className="flex flex-col items-center justify-center basis-1/5 h-2/5 border-2 border-gray-700 rounded-xl">
                     <RsiGauge searchString={cryptoSeacrh[crypto]} />
+                    <h2 className="text-xl font-bold mb-2">Market Sentiment</h2>
                 </div>
             </div>
             <div className="dark w-full max-w-5xl flex flex-row gap-4 items-center justify-center">

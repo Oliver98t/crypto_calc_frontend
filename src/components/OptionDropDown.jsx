@@ -26,7 +26,12 @@ export default function OptionDropDown({ label, onSelect, options }) {
     return (
         <Dropdown>
             <DropdownTrigger>
-                <Button variant="bordered" fullWidth>{selectedOption}</Button>
+                <Button 
+                fullWidth
+                variant="bordered" 
+                style={{ color: 'white', fontWeight: 'bold' }}
+                >
+                    {selectedOption}</Button>
             </DropdownTrigger>
             <DropdownMenu aria-label="Static Actions" onAction={handleChange}>
                 {processedOptions.map((option, index) => (

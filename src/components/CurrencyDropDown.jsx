@@ -35,7 +35,12 @@ const CurrencyDropDown = ({ label, currency_type, onSelect }) => {
     return (
         <Dropdown>
             <DropdownTrigger>
-                <Button variant="bordered">{selectedOption}</Button>
+                <Button 
+                    variant="bordered" 
+                    style={{ color: 'white', fontWeight: 'bold' }}
+                >
+                    {selectedOption}
+                </Button>
             </DropdownTrigger>
             <DropdownMenu aria-label="Static Actions" onAction={handleChange}>
                 {options.map((option, index) => (
