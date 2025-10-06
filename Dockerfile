@@ -9,17 +9,10 @@ COPY package*.json ./
 # Install dependencies
 RUN npm ci
 
-# Copy source code
-COPY . .
+# Don't copy source code - will be mounted as volume
+# Source code will be mounted at runtime for live reloading
 
 # Build the app
-CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0", "--port", "5173"]
-#RUN npm run build
+EXPOSE 5173
 
-# Install serve globally
-#RUN npm install -g serve
-
-#EXPOSE 3000
-
-#CMD ["serve", "-s", "build", "-l", "3000"]
-
+CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0"]
