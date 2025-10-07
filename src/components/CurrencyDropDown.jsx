@@ -6,7 +6,7 @@ const CurrencyDropDown = ({ label, currency_type, onSelect }) => {
     const [options, setOptions] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:8000/ohlcv/available_currencies/', {
+        fetch('/api/ohlcv/available_currencies/', {
             headers: {
                 Accept: 'application/json',
             },

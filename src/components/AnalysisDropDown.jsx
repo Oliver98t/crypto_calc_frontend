@@ -6,7 +6,7 @@ export default function AnalysisDropDown({ label, onSelect }) {
     const [options, setOptions] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:8000/ohlcv/available_analyses/', {
+        fetch('/api/ohlcv/available_analyses/', {
             headers: {
                 Accept: 'application/json',
             },

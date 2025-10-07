@@ -7,7 +7,7 @@ const RsiGauge = ({searchString}) => {
     useEffect(() => {
         if (!searchString) return;
         fetch(
-            `http://localhost:8000/ohlcv/market_sentiment/?&search_string=${searchString}`,
+            `/api/ohlcv/market_sentiment/?&search_string=${searchString}`,
             {
                 headers: {
                     Accept: 'application/json',
