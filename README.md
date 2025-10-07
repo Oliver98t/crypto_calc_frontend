@@ -1,6 +1,4 @@
-
-https://github.com/user-attachments/assets/e42a89bf-1c8c-4d27-8e49-e46e0d65a0ab
-# Crypto Calculator
+# Crypto Calc
 
 A modern cryptocurrency calculator built with Vite and HeroUI. Calculate crypto conversions, track prices, and perform various cryptocurrency-related calculations with a beautiful, responsive interface.
 
